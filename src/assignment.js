@@ -14,24 +14,18 @@ const assignment = {};
 console.log('QUESTION 1 ANSWER')
 console.log('')
 
-let arrayOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
-
+function sumOfNumbers() {
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let sum = 0;
 
-function sumOfNumbers(arrayOfNumbers) {
-    
-for( let number = 0; number < arrayOfNumbers.length; number++ ){
-    sum = sum + arrayOfNumbers[number];
-   console.log(sum)
-
+for (let i = 0; i < array.length; i++) {
+    sum += array[i];
 }
+console.log(sum);
 }
 
-sumOfNumbers(arrayOfNumbers)
+sumOfNumbers()
 
-console.log('')
-
-console.log(`The number of elements in the array is ${arrayOfNumbers.length}`)
 
 
 
@@ -52,12 +46,12 @@ console.log('')
 
 console.log('QUESTION 2 ANSWER')
 console.log('')
-let NewarrayOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+let arrayOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 
 
-function countEvenNumbers(NewarrayOfNumbers) {
+function countEvenNumbers(arrayOfNumbers) {
 
-// console.log(`The original array is [${arrayOfNumbers}] and it consists of ${arrayOfNumbers.length} elements`)
+
 console.log('The original array of numbers is');       
 console.log(arrayOfNumbers)
 
@@ -72,10 +66,10 @@ console.log(evenNumbers)
 console.log(`and there are ${evenNumbers.length} even numbers in this array`)
 
 
-    return NewarrayOfNumbers.length;
+    return arrayOfNumbers.length;
 }
 
-countEvenNumbers(NewarrayOfNumbers)
+countEvenNumbers(arrayOfNumbers)
 
 
 
